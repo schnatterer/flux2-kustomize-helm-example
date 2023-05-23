@@ -281,6 +281,11 @@ with `dependsOn` we tell Flux to create the infrastructure items before deployin
 
 Fork this repository on your personal GitHub account and export your GitHub access token, username and repo name:
 
+Create a cluster, e.g. like so
+```shell
+k3d cluster create flux-staging --image rancher/k3s:v1.25.9-k3s1
+```
+
 ```sh
 export GITHUB_TOKEN=<your-token>
 export GITHUB_USER=<your-username>

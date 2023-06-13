@@ -279,7 +279,7 @@ spec:
 Note that with `path: ./apps/staging` we configure Flux to sync the staging Kustomize overlay and 
 with `dependsOn` we tell Flux to create the infrastructure items before deploying the apps.
 
-Fork this repository on your personal GitHub account and export your GitHub access token, username and repo name:
+Fork this repository on your personal GitHub account and export your [GitHub access token](https://github.com/settings/tokens), username and repo name:
 
 Create a cluster, e.g. like so
 ```shell

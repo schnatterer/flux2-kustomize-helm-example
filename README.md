@@ -4,6 +4,10 @@
 [![e2e](https://github.com/fluxcd/flux2-kustomize-helm-example/workflows/e2e/badge.svg)](https://github.com/fluxcd/flux2-kustomize-helm-example/actions)
 [![license](https://img.shields.io/github/license/fluxcd/flux2-kustomize-helm-example.svg)](https://github.com/fluxcd/flux2-kustomize-helm-example/blob/main/LICENSE)
 
+This fork of [fluxcd/flux2-kustomize-helm-example](https://github.com/fluxcd/flux2-kustomize-helm-example) extends the basic example shown there by a solution to manage multiple applications (see [apps/staging](apps/staging)).
+This reflects discussions from [fluxcd/flux2-kustomize-helm-example#16](https://github.com/fluxcd/flux2-kustomize-helm-example/issues/16).  
+It also contains examples for the manifests created by `flux bootstrap`, see [clusters/staging/flux-system](clusters/staging/flux-system).
+
 For this example we assume a scenario with two clusters: staging and production.
 The end goal is to leverage Flux and Kustomize to manage both clusters while minimizing duplicated declarations.
 
